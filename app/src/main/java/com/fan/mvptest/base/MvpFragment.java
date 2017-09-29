@@ -15,9 +15,6 @@ import com.fan.mvptest.base.mvp.Presenter;
 import javax.inject.Inject;
 
 
-/**
- * Created by ganzhubing on 2017/9/6.
- */
 public abstract class MvpFragment<T extends Presenter> extends CoreFragment implements MvpView {
     protected Context mContext;
     @Inject

@@ -9,9 +9,6 @@ import com.fan.base.di.moudle.FragmentModule;
 
 import dagger.Component;
 
-/**
- * Created by ganzhubing on 2017/9/6.
- */
 
 @FragmentScope
 @Component(dependencies = AppComponent.class, modules = FragmentModule.class)
