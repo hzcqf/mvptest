@@ -1,7 +1,6 @@
 package com.fan.base.config;
 
 /**
- * Created by ganzhubing on 2017/9/6.
  * <p>
  * 应用配置信息
  */

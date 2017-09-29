@@ -19,9 +19,6 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.subjects.BehaviorSubject;
 import me.yokeyword.fragmentation.SupportActivity;
 
-/**
- * Created by ganzhubing on 2017/9/6.
- */
 public class IRxActivity extends SupportActivity implements LifecycleProvider<ActivityEvent> {
     private final BehaviorSubject<ActivityEvent> lifecycleSubject = BehaviorSubject.create();
 

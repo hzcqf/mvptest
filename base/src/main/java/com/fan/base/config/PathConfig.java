@@ -1,8 +1,6 @@
 package com.fan.base.config;
 
 /**
- * Created by ganzhubing on 2017/9/6.
- * <p>
  * 定义Arouter跳转路由
  */
 

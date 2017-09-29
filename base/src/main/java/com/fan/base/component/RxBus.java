@@ -7,9 +7,7 @@ import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 
 
-/**
- * Created by ganzhubing on 2017/9/6.
- */
+
 public class RxBus {
     private final Relay<Object> bus;
 

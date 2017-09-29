@@ -1,7 +1,6 @@
 package com.fan.base.config;
 
 /**
- * Created by ganzhubing on 2017/9/12.
  * Arouter携参数跳转 配置
  */
 
