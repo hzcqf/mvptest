@@ -8,6 +8,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.blankj.utilcode.util.AppUtils;
 import com.blankj.utilcode.util.Utils;
 import com.fan.base.di.component.AppComponent;
+import com.fan.base.di.component.DaggerAppComponent;
 import com.fan.base.di.moudle.AppModule;
 import com.jiahuaandroid.basetools.utils.CUtils;
 import com.orhanobut.logger.AndroidLogAdapter;

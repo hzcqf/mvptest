@@ -1,10 +1,11 @@
 package com.fan.base.component;
 
+import com.fan.base.http.constant.ResponseCode;
+import com.fan.base.http.ex.ApiException;
+import com.fan.base.http.ex.ResultException;
+
 import java.util.concurrent.TimeUnit;
 
-import cn.dayu.base.http.constant.ResponseCode;
-import cn.dayu.base.http.ex.ApiException;
-import cn.dayu.base.http.ex.ResultException;
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 
