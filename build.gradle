@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -15,9 +16,61 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url 'http://dl.bintray.com/esri/arcgis'
+        }
     }
+
+    apply plugin: 'me.tatarka.retrolambda'
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+
+// base依赖包版本集中管理
+ext {
+    javaVersion = JavaVersion.VERSION_1_8
+
+    arouterApiVersion = "1.2.2"
+    arouterCompilerVersion = "1.1.3"
+    multidexVersion = "1.0.1"
+    leakcanaryVersion = "1.5.1"
+    jsr305Version = "1.3.9"
+
+    zXingVersion = "3.2.1"
+    retrofitVersion = "2.1.0"
+    retrofitConverterScalarVersion = "2.3.0"
+    retrofitConverterGsonVersion = "2.3.0"
+    retrofitAdapterRxjava2Version = "2.3.0"
+    hjhVersion = "1.1.0"
+    glideVersion = "3.7.0"
+    loggerVersion = "2.1.1"
+    daggerVersion = "2.11"
+    daggerCompilerVersion = "2.11"
+    daggerAndroidVersion = "2.11"
+    daggerAndroidSupportVersion = "2.11"
+    daggerAndroidProcessorVersion = "2.11"
+    rxjava2Version = "2.1.0"
+    rxandroid2Version = "2.0.1"
+    rxbinding2Version = "2.0.0"
+    rxbinding2SupportV4Version = "2.0.0"
+    rxbinding2AppcompatV7Version = "2.0.0"
+    rxbinding2DesignVersion = "2.0.0"
+    rxbinding2recyclerviewV7Version = "2.0.0"
+    rxrelay2Version = "2.0.0"
+    rxlifecycle2Version = "2.1.0"
+    rxlifecycle2AndroidVersion = "2.1.0"
+    rxlifecycle2ComponentsVersion = "2.1.0"
+    rxpermissions2Version = "0.9.4@aar"
+    lombokVersion = "1.16.18"
+    fragmentationVersion = "1.1.0"
+    fragmentationSwipebackVersion = "1.1.0"
+    utilcodeVersion = "1.8.1"
+
+    /**
+     * greendao目前只支持rxjava1  后期greendao适配rxjava2后需要升级
+     */
+    greendaoVersion = "3.2.0"
 }
