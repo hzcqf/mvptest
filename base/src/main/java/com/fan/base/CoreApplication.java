@@ -18,9 +18,6 @@ import com.orhanobut.logger.PrettyFormatStrategy;
 
 
 
-/**
- * Created by ganzhubing on 2017/9/6.
- */
 public abstract class CoreApplication extends MultiDexApplication {
     private static CoreApplication instance;
 
