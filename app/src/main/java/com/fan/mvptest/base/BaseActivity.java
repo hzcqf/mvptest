@@ -68,23 +68,18 @@ public abstract class BaseActivity<T extends ActivityPresenter> extends MvpActiv
      *
      * @param savedInstanceState 状态信息
      */
-    protected void initViews(Bundle savedInstanceState) {
-        Logger.i(getClass().getName() + ":initViews");
-    }
+    protected abstract void initViews(Bundle savedInstanceState);
 
     /**
      * initialize the Activity data
      */
-    protected void initData() {
-        Logger.i(getClass().getName() + ":initData");
-    }
+    protected abstract void initData();
 
     /**
      * initialize event
      */
-    protected void initEvents() {
-        Logger.i(getClass().getName() + ":initEvents");
-    }
+    protected abstract void initEvents();
+
 
     protected void setStatusBar() {
         if (!ifFullScreen()) {
