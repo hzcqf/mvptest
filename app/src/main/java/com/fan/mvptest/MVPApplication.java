@@ -2,6 +2,9 @@ package com.fan.mvptest;
 
 
 import com.fan.base.CoreApplication;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import org.litepal.LitePalApplication;
 
@@ -22,22 +25,23 @@ public class MVPApplication extends CoreApplication {
         super.onCreate();
         LitePalApplication.initialize(this);
         mInstance = this;
-//        DisplayImageOptions defaultOptions = new DisplayImageOptions
-//                .Builder()
-//                .showImageForEmptyUri(R.mipmap.icon_add_pic)
-//                .showImageOnFail(R.mipmap.icon_add_pic)
-//                .cacheInMemory(true)
-//                .cacheOnDisk(true)
-//                .build();
 
-//        ImageLoaderConfiguration config = new ImageLoaderConfiguration
-//                .Builder(getApplicationContext())
-//                .defaultDisplayImageOptions(defaultOptions)
-//                .diskCacheSize(50 * 1024 * 1024)//
-//                .diskCacheFileCount(100)//缓存一百张图片
-//                .writeDebugLogs()
-//                .build();
-//        ImageLoader.getInstance().init(config);
+        DisplayImageOptions defaultOptions = new DisplayImageOptions
+                .Builder()
+                .showImageForEmptyUri(R.mipmap.ic_launcher)
+                .showImageOnFail(R.mipmap.ic_launcher)
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
+                .build();
+
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration
+                .Builder(getApplicationContext())
+                .defaultDisplayImageOptions(defaultOptions)
+                .diskCacheSize(50 * 1024 * 1024)//
+                .diskCacheFileCount(100)//缓存一百张图片
+                .writeDebugLogs()
+                .build();
+        ImageLoader.getInstance().init(config);
 
 
     }
