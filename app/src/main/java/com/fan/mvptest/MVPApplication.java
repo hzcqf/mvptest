@@ -43,6 +43,8 @@ public class MVPApplication extends CoreApplication {
                 .build();
         ImageLoader.getInstance().init(config);
 
+        //这个还可不可以
+
 
     }
 
